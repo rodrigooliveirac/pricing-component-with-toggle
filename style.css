@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    box-sizing: border-box;
+    font: 1em sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: hsl(48, 7%, 87%);
+}
+
+.titles{
+    padding: 30px;
+    font-size: 12px;
+    text-align: center;
+    color: hsl(234, 14%, 74%);
+}
+
+h1{
+    font-size: 18px;
+    padding: 16px;
+    color: hsla(234, 13%, 49%, 0.849);
+}
+
+.type{
+    border: none;
+    margin-top: -20px;
+}
+
+span{
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.valor {
+    display: flex;
+    padding: 15px;
+    padding-top: 0;
+    font-size: 40px;
+    align-items: center;
+}
+
+.period{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 160px;
+    height: 30px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: hsl(237, 63%, 64%);
+}
+
+/* Checkbox button style*/
+
+.ok{
+    width: 30px;
+    height: 19px;
+    cursor: pointer;
+    appearance: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+
+.ok:before{
+    top: 2px;
+    left: 2px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.ok:checked:before {
+    left: 13px;
+
+}
+
+.ok:hover{
+    background-image:none;
+    background-color: hsl(236, 72%, 79%);
+}
+
+ul{
+    padding: 20px;
+}
+
+li{
+    width: 160px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid currentColor;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.basic, .professional, .master{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.basic, .master{
+    width: 200px;
+    height: 280px;
+    margin-top: 10px;
+    border-radius: 6px 0 0 6px;
+    color: hsl(233, 13%, 49%);
+    background-color: hsl(240, 78%, 98%);
+}
+
+.basic button, .master button{
+    color: hsl(240, 78%, 98%);
+    background-image: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+
+.basic button:hover, .master button:hover{
+    color: hsl(237, 63%, 64%);
+    background-image: none;
+    background-color: hsl(240, 78%, 98%);
+    border: 1px solid hsl(237, 63%, 64%);
+}
+
+.professional{
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    color: hsl(240, 78%, 98%);
+    background-image: linear-gradient(to bottom right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+
+.professional button:hover{
+    color: hsl(240, 78%, 98%);
+    border: 1px solid hsl(240, 78%, 98%);
+    background-image: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+
+.noite{
+    display: none;
+}
+
+.attribution{
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 620px) {
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .basic, .professional, .master{
+        margin: 10px;
+        width: 200px;
+        height: 280px;
+        border-radius: 10px;
+    }
+}
